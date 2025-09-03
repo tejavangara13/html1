@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Vangara Gnana Tejaswi</title>
+  <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+  <header>
+    <h1>Vangara Gnana Tejaswi</h1>
+    <p>Computer Science & Engineering (Data Science) </p>
+   
+   
+    <nav>
+      <button onclick="scrollToSection('objective')">Career Objective</button>
+      <button onclick="scrollToSection('education')">Education</button>
+      <button onclick="scrollToSection('projects')">Projects</button>
+      <button onclick="scrollToSection('skills')">Skills</button>
+      <button onclick="scrollToSection('internships')">Internships</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+  </header>
+  <br>
+  <center><img src="/images/fav.jpg" width="250" ></center>
+
+  <section id="objective">
+    <h2>Career Objective</h2>
+    <p>Motivated and detail-oriented Computer Science and Engineering (Data Science) student seeking an entry-level position in the IT industry. Skilled in Python, Machine Learning, Data Science, and Cloud Computing with hands-on project and internship experience.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><b>St. Mary’s Women’s Engineering College (2021-2025)</b><br>
+    B.Tech in Computer Science and Engineering (Data Science)<br>
+    CGPA: 6.84</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><b>Heart Disease Prediction using Machine Learning</b></p>
+    <ul>
+      <li>Predicted likelihood of heart disease using health indicators (age, BP, cholesterol, smoking habits).</li>
+      <li>Algorithms: Logistic Regression, Random Forest.</li>
+      <li>Enhanced early diagnosis and preventive healthcare with reliable, data-driven models.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Programming Languages: Python</li>
+      <li>Front-End: HTML, CSS, JavaScript</li>
+      <li>Database: MySQL (Basics)</li>
+      <li>Tools: VS Code, GitHub</li>
+    </ul>
+  </section>
+
+  <section id="internships">
+    <h2>Internships & Certifications</h2>
+    <ul>
+      <li>AWS (May–Jun 2023) – Hands-on experience with cloud computing.</li>
+      <li>Data Science, ML & AI (July 2024) – Built models & analyzed trends.</li>
+      <li>ChatGPT & GenAI (April 2025) – Worked on NLP, prompt engineering, and OpenAI APIs.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+        <h2>Contact Me</h2>
+    <p>feel free to get in touch with me using the below form</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <div class="gender">
+        choose your gender:
+        <input type="checkbox" name="gender" value="female"> Female
+        <input type="checkbox" name="gender" value="male"> Male
+      </div>
+
+      <label for="bio">bio (up to 200 characters):</label>
+      <textarea id="bio" name="bio" rows="3" maxlength="200"></textarea>
+
+       <button onclick="scrollToSection('submit')">Submit</button>
+    </form>
+
+   
+  </section>
+
+  <footer>
+    <p>© 2025 Vangara Gnana Tejaswi | Portfolio</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
+
+</body>
+</html>

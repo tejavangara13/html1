@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Pass Application Form</title>
+</head>
+<body>
+    <center><img src="./images/Screenshot 2025-07-28 154005.png" alt=""></center>
+
+<form>
+    <!-- Applicant Details -->
+    <fieldset>
+        <legend>Applicant Details</legend>
+        <table>
+            <tr>
+                <td><label for="name">Name *</label></td>
+                <td><input type="text" id="name" name="name" maxlength="20" required></td>
+                <td><label for="father">Father's / Guardian's Name</label></td>
+                <td><input type="text" id="father" name="father"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth *</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+                <td><label>Gender *</label></td>
+                <td>
+                    <input type="radio" name="gender" value="female" required> Female
+                    <input type="radio" name="gender" value="male" required> Male
+                </td>
+            </tr>
+            <tr>
+                <td><label for="whatsapp">WhatsApp No</label></td>
+                <td><input type="tel" id="whatsapp" name="whatsapp"></td>
+                <td><label for="aadhaar">Aadhaar No</label></td>
+                <td><input type="text" id="aadhaar" name="aadhaar"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email ID</label></td>
+                <td><input type="email" id="email" name="email"></td>
+                <td><label for="photo">Photo</label></td>
+                <td><input type="file" id="photo" name="photo"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- Address Details -->
+    <fieldset>
+        <legend>Residential Address Details</legend>
+        <table>
+            <tr>
+                <td><label for="address">Applicant's Address *</label></td>
+                <td><input type="text" id="address" name="address" maxlength="20" required></td>
+                <td><label for="district">District *</label></td>
+                <td>
+                    <select id="district" name="district" required>
+                        <option value="HYDERABAD">HYDERABAD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mandal">Mandal *</label></td>
+                <td><input type="text" id="mandal" name="mandal" value="HYDERABAD" required></td>
+                <td><label for="village">Village *</label></td>
+                <td><input type="text" id="village" name="village" value="HYDERABAD" required></td>
+            </tr>
+            <tr>
+                <td><label for="pincode">Pincode *</label></td>
+                <td><input type="text" id="pincode" name="pincode" required></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- Pass Type -->
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <table>
+            <tr>
+                <td><label for="city">City *</label></td>
+                <td><input type="text" id="city" name="city" value="Hyderabad" required></td>
+                <td><label for="passType">Pass Type *</label></td>
+                <td>
+                    <select id="passType" name="passType" required>
+                        <option value="">--Select--</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- Payment -->
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection</legend>
+        <table>
+            <tr>
+                <td><label for="paymentMode">Payment Mode *</label></td>
+                <td>
+                    <select id="paymentMode" name="paymentMode" required>
+                        <option value="">Select Payment Mode</option>
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                    </select>
+                </td>
+                <td><label for="deliveryMode">Pass Delivery Mode *</label></td>
+                <td>
+                    <select id="deliveryMode" name="deliveryMode" required>
+                        <option value="">Select Pass Delivery Mode</option>
+                        <option value="home">Home Delivery</option>
+                        <option value="center">Collection at Center</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="center">Center to Collect Pass *</label></td>
+                <td>
+                    <select id="center" name="center" required>
+                        <option value="">--Select--</option>
+                        <option value="center1">Center 1</option>
+                        <option value="center2">Center 2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="captcha">Captcha *</label></td>
+                <td>
+                    <img src="./images/Screenshot 2025-07-28 203750.png" alt="captcha">
+                    <br>
+                    <input type="text" id="captcha" name="captcha" required>
+                
+                 
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

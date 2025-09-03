@@ -1,0 +1,46 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    .container{
+      display: center;
+    }
+
+   .box {
+      width: 300px;
+      height: auto;
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    .box img {
+      width: 250px;
+      height: 150px;
+      display: block;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .box h1 {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+
+    .box p {
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    /* Different Background Colors */
+    .nature { background-color: #a3d5ff; }   /* Light Blue */
+    .mountains { background-color: #a3ffb5; } /* Light Green */
+    .lakes { background-color: #ffd6a3; }     /* Light Orange */
+    .ocean { background-color: #f2a3ff; }     /* Light Purple */
+  
+
+  
