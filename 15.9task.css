@@ -34,9 +34,10 @@
       object-fit: cover;
     }
 
-    .label {
+     .label {
       position: absolute;
-      bottom: 10px;
+      top: 50px;
+      margin-top: 50px;
       left: 50%;
       transform: translateX(-50%);
       background: black;
